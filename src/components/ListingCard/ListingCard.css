@@ -1,0 +1,37 @@
+body{
+    background-color: #FAFAFA;;
+}
+.listing-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.listing-card{
+    width: 183px;
+    height: 248px;
+    border-radius: 8px;
+    border: 1px ;
+    background-color: white;
+    margin-right:66px;
+    
+}
+
+.listing-card a{
+    margin-top:8px;
+    cursor: pointer;
+}
+
+img{
+    width: 83px;
+    height: 117px;
+    margin:2px;
+    background-color: transparent;
+    margin-top:16px;
+    border:1px solid #EFEFEF;
+    border-radius: 8px;
+    
+}
+p{
+   justify-content: center; 
+}

@@ -17,7 +17,7 @@ function Homepage() {
       //make api call to get characters 
       //axios.get(`https://fakestoreapi.com/products/`)
 
-      axios.get(`https://fakestoreapi.com/products/`)
+      axios.get(`https://fakestoreapi.com/products`)
       .then(res =>{
         console.log(res.data)
         //I have the data, where do I store it?

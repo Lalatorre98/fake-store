@@ -15,11 +15,11 @@ function Header() {
       
       <div className="header-container">
       
-        <a href='#' style={{marginRight:"28px"}}>All</a>
-        <a href='#' style={{marginRight:"28px"}}>Electronics</a>
-        <a href='#' style={{marginRight:"28px"}}>Jewelry</a>
-        <a href='#' style={{marginRight:"28px"}}>Men's Clothing</a>
-        <a href='#'>Women's Clothing</a>
+        <a href='/' style={{marginRight:"28px"}}>All</a>
+        <a href='/electronics' style={{marginRight:"28px"}}>Electronics</a>
+        <a href='/jewelry' style={{marginRight:"28px"}}>Jewelry</a>
+        <a href='/MensClothing' style={{marginRight:"28px"}}>Men's Clothing</a>
+        <a href='WomensClothing'>Women's Clothing</a>
         </div>
         </div>
 

@@ -8,6 +8,7 @@ import Jewelry from './pages/Jewelry/Jewelry'
 import Electronics from './pages/Electronics/Electronics'
 import Womensclothing from './pages/WomensClothing/Womensclothing'
 import Mensclothing from './pages/MensClothing/Mensclothing'
+import ListingDetails from './pages/ListingDetails/ListingDetails'
 
 
 
@@ -25,6 +26,8 @@ function App() {
         <Route path='/electronics' element={<Electronics />}/>
         <Route path='/MensClothing' element={<Mensclothing />}/>
         <Route path='/WomensClothing' element={<Womensclothing />}/>
+        <Route path='/details/:listingId' element={<ListingDetails />} />
+
   
       </Routes>
 

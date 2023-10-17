@@ -7,7 +7,7 @@ function ListingCard({listing}) {
     <div className="listing-container">
      <div className="listing-card">
          <img src={listing.image} />
-        <a href="#"><p>{listing.title}</p></a>
+        <a href={`/details/${listing.id}`}><p>{listing.title}</p></a>
         <div className="description">
             <p>{listing.category}</p>
         </div>

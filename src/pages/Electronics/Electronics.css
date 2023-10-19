@@ -1,0 +1,11 @@
+.electronics-container{
+    min-height:100vh;
+    padding:30px 10px;
+}
+
+.listings-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}

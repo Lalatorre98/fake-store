@@ -1,15 +1,20 @@
 body{
     background-color: #FAFAFA;;
 }
+
 .listing-container{
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 66px;
     margin-top: 32px;
+    /* justify-content: center;
+    align-items: center; */
+    
 }
 
 .listing-card{
-    width: 183px;
-    height: 248px;
+    width: 200px;
+    height: fit-content;
     border-radius: 8px;
     border: 1px ;
     background-color: white;
@@ -28,10 +33,52 @@ img{
     margin:2px;
     background-color: transparent;
     margin-top:16px;
-    border:1px solid #EFEFEF;
-    border-radius: 8px;
-    
+    margin-left: 30px;
 }
+
+.image-border{
+    border-radius: 8px;
+    border: 1px solid #EFEFEF;
+    background: #FFF;
+    margin:16px 16px 20px 16px;
+}
+
 p{
-   justify-content: center; 
+   color: #282828;
+   font-size: 10px;
+   font-style: normal;
+   line-height: normal;
+   font-weight: 700;
+   /* overflow-wrap: break-word; */
+   white-space: nowrap;
+    margin-left:16px;
+}
+
+.listing{
+    color: #949494;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.price{
+    color: #282828;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left:16px;
+}
+
+.heart-icon{
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-left: 128px;
+    margin-right: 6px;
+    color:#949494;
 }

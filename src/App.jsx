@@ -9,6 +9,8 @@ import Electronics from './pages/Electronics/Electronics'
 import Womensclothing from './pages/WomensClothing/Womensclothing'
 import Mensclothing from './pages/MensClothing/Mensclothing'
 import ListingDetails from './pages/ListingDetails/ListingDetails'
+import Myfavorites from './pages/MyFavorites/Myfavorites'
+import FavoritesContextProvider from './contexts/FavoritesContext'
 
 
 
@@ -17,12 +19,14 @@ function App() {
 
   return (
     <BrowserRouter>
+    <FavoritesContextProvider>
       <Header />
 
       <Routes>
 
         <Route path='/' element={<Homepage />} />
-        <Route path='/jewelry' element={<Jewelry/>}/>
+        <Route path='/myfavorites' element={<Myfavorites />} />
+        <Route path='/jewelry' element={<Jewelry />}/>
         <Route path='/electronics' element={<Electronics />}/>
         <Route path='/MensClothing' element={<Mensclothing />}/>
         <Route path='/WomensClothing' element={<Womensclothing />}/>
@@ -32,6 +36,7 @@ function App() {
       </Routes>
 
       <Footer />
+      </FavoritesContextProvider>
     </BrowserRouter>
   )
 }

@@ -10,6 +10,7 @@ function Header() {
       <div className="header">
         <div className='title-header'>
         <h1>Fake Store</h1>
+        <h2><a href='/myfavorites'>My Favorites</a></h2>
         </div>
       
       

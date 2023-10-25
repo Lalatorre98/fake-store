@@ -40,7 +40,7 @@ function ListingCard({listing}) {
          
         <a href={`/details/${listing.id}`}>
           <div className="title">
-          <p>{listing.title.slice(0,18)}</p>
+          <p>{listing.title?.slice(0,18)}</p>
           {/* {upcomingMovies[index]?.overview.slice(0, 130)}... */}
           </div>
           </a>

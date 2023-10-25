@@ -80,5 +80,7 @@ p{
     margin-top: 6px;
     margin-left: 128px;
     margin-right: 6px;
-    color:#949494;
+    stroke-width: 1px;
+    stroke: #3A4895;
+    color:#3A4895;
 }

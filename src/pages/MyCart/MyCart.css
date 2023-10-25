@@ -1,0 +1,87 @@
+.cart-container{
+    min-height: 90vh;
+}
+
+.checkout-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: white;
+    width: 863px;
+    height: 783px;
+    margin: 169px 270px 74px 307px;
+}
+
+.checkout-nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.item{
+    margin-left: 76px;
+    color:gray;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.price{
+    color:gray;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 179px;
+}
+
+.quantity{
+    color:gray;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left:54px;
+}
+
+.remove{
+    color:gray;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left:54px;
+}
+
+/*  */
+.cart-listings{
+    display: flex;
+    position: absolute;
+}
+
+.lis-price{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lis-quantity{
+    display: flex;
+    flex-direction: column;
+
+}
+
+img{
+    display: flex;
+    flex-direction: row;
+    margin-right:48px;
+    margin-top:30px;
+}
+
+.lis-trash{
+    display: flex;
+    flex-direction: column;
+
+}

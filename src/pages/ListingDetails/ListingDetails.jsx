@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useContext} from 'react'
 import './ListingDetails.css'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { AddCartContext } from '../../contexts/AddCartContext'
+
 
 function ListingDetails() {
     //this page shows details of a specific listing
@@ -12,10 +14,22 @@ function ListingDetails() {
     const {listingId} = useParams()
     //create state to hood character details
     const[listing, setListing]=React.useState('')
+    const {addListing, cart, removeListing}=useContext(AddCartContext)
 
     //https://fakestoreapi.com/products/1
 
     //set up useEffect to run when the page loads 
+    const [isAdded, setIsAdded]=React.useState(false)
+
+
+  useEffect(
+    ()=>{
+      //console.log(favorites)
+      //is this in cart?
+      setIsAdded(cart?.find(item=>item.id===listing.id))
+
+    }, [cart]
+  )
     useEffect(
 
         ()=>{
@@ -44,7 +58,14 @@ function ListingDetails() {
             <p className='price'>{listing?.price}€</p>
             <p className='description'>Description:</p> 
             <p className='text'>{listing?.description}</p>
-            <button className='button'>Add to Cart</button>
+            <button className='button' onClick={()=>addListing(listing.id)}>Add to Cart</button>
+            {/* {
+          isAdded?
+        <button className='button' onClick={()=>addListing(listing.id)}/>
+        :
+        <button className='button' onClick={()=>removeListing(listing.id)}/>
+
+        } */}
         
         </div>
         </div>

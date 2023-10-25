@@ -18,3 +18,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.cart{
+    font-size: 25px;
+    stroke-width: 1px;
+    stroke: #3A4895;
+}

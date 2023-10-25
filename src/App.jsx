@@ -11,6 +11,8 @@ import Mensclothing from './pages/MensClothing/Mensclothing'
 import ListingDetails from './pages/ListingDetails/ListingDetails'
 import Myfavorites from './pages/MyFavorites/Myfavorites'
 import FavoritesContextProvider from './contexts/FavoritesContext'
+import AddCartContextProvider from './contexts/AddCartContext'
+import MyCart from './pages/MyCart/MyCart'
 
 
 
@@ -20,6 +22,7 @@ function App() {
   return (
     <BrowserRouter>
     <FavoritesContextProvider>
+      <AddCartContextProvider>
       <Header />
 
       <Routes>
@@ -31,11 +34,13 @@ function App() {
         <Route path='/MensClothing' element={<Mensclothing />}/>
         <Route path='/WomensClothing' element={<Womensclothing />}/>
         <Route path='/details/:listingId' element={<ListingDetails />} />
+        <Route path='/MyCart' element={<MyCart />} />
 
   
       </Routes>
 
       <Footer />
+      </AddCartContextProvider>
       </FavoritesContextProvider>
     </BrowserRouter>
   )
